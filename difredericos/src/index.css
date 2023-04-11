@@ -1,0 +1,125 @@
+body {
+  background-color: white;
+  margin: 0px;
+}
+
+:root {
+  --app-height: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.margin--block--left {
+  position: absolute;
+  display: inline;
+  left: 0%;
+  height: 100%;
+  width: 200px;
+  background-color: black;
+}
+
+.margin--block--right {
+  position: absolute;
+  right: 0%;
+  height: 100%;
+  width: 200px;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100vW;
+}
+
+.t--shirt {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.button {
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+h1:hover {
+  font-size: 110px;
+  color: lime;
+  transition-duration: .5s;
+}
+
+.image { 
+  width: 100%;
+}
+
+#circle {
+  position:absolute;
+  transform: translate(-50px,-50px);
+  height: 200px;
+  width: 200px;
+  border-radius:50%;
+  background: radial-gradient(lime, transparent);
+}
+
+@keyframes blinker {
+  50% {
+    background-color: lime;
+  }
+}
+
+@keyframes blinkerText {
+  50% {
+    color: lime;
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+
+  #circle {
+    display: none;
+  }
+
+  .container{
+    height: var(--app-height);
+    align-items: center;
+    background-color: black;
+  }
+
+  .button {
+    position: relative;
+    background-color: black;
+    height: 30vH;
+    display: flex;
+    align-items: center;
+  }
+
+  .t--shirt {
+    background-color: white;
+    animation: blinker 2s linear infinite;
+    
+  }
+  h1 {
+    font-size: 68px;
+    animation: blinkerText 2s linear infinite;
+
+  }
+}
