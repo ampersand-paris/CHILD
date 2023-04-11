@@ -80,8 +80,14 @@ h1:hover {
 }
 
 p {
+  position: absolute;
+  bottom: 0%;
+  text-align: center;
   color: white;
+  margin: 0px;
+  width: 100%;
 }
+
 @keyframes blinker {
   50% {
     background-color: lime;
