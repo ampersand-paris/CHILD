@@ -1,5 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router,
+  Routes,
+  Route } from "react-router-dom";
+import Landing from "./Landing";
 
 import appHeight from './appHeight';
 
@@ -17,21 +19,11 @@ function App() {
 
   return (
     <>
-      <div className="container">
-        <div id="circle"></div>
-        {/* <div className="margin--block--left">
-        </div> */}
-        <div className="t--shirt">
-          <div className="button">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-tGogYumelRWhEY_4cUTK8j-YRMQBuc3JRK6t6ysvU7fi5g/viewform?usp=sf_link"><h1>ORDER NOW</h1></a>
-          </div>
-          <img id="img" className="image" src="/T-shirt.png" />
-        </div>
-        {/* <div className="margin--block--right">
-          
-        </div> */}
-      </div>
-      
+      <Router>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+        </Routes>
+      </Router>
     </>
   );
 }
