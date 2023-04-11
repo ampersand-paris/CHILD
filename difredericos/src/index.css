@@ -79,6 +79,9 @@ h1:hover {
   background: radial-gradient(lime, transparent);
 }
 
+p {
+  color: white;
+}
 @keyframes blinker {
   50% {
     background-color: lime;
