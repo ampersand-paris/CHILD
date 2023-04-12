@@ -57,7 +57,8 @@ a {
 }
 
 h1 {
-  font-size: 100px;
+  margin: 20px;
+  font-size: 90px;
 }
 
 h1:hover {
@@ -97,7 +98,7 @@ p {
 @keyframes blinkerText {
   50% {
     color: lime;
-    font-size: 70px;
+    font-size: 58px;
   }
 }
 
@@ -127,7 +128,7 @@ p {
     
   }
   h1 {
-    font-size: 68px;
+    font-size: 56px;
     animation: blinkerText 2s linear infinite;
 
   }
