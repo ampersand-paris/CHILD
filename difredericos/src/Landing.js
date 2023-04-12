@@ -22,7 +22,7 @@ import { BrowserRouter as Router,
           </div> */}
           <div className="t--shirt">
             <div className="button">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-tGogYumelRWhEY_4cUTK8j-YRMQBuc3JRK6t6ysvU7fi5g/viewform?usp=sf_link"><h1>BUY YOUR T-SHIRT NOW</h1></a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-tGogYumelRWhEY_4cUTK8j-YRMQBuc3JRK6t6ysvU7fi5g/viewform?usp=sf_link"><h1>BUY YOUR <br></br>T-SHIRT NOW</h1></a>
             </div>
             <img id="img" className="image" src="/T-shirt.png" />
             <p>Artwork by Alexis Gallo.</p>
